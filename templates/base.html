@@ -3,54 +3,79 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="health, mineral, water, sport, mineral water, ion, mosonmagyarovar, hungary">
-    {% endblock %}
-    <!-- Bootstrap CSS -->
+    <head>
+        <!-- Required meta tags -->
+        {% block meta %}
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="keywords" content="health, mineral, water, sport, mineral water, ion, mosonmagyarovar, hungary">
+        {% endblock %}
+        <!-- Bootstrap CSS -->
 
-    {% block corecss %}
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
-    {% endblock %}
+        {% block corecss %}
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+        {% endblock %}
 
-    {% block corejs %}
-        <script src="https://kit.fontawesome.com/134b89db0f.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    {% endblock %}
+        {% block corejs %}
+            <script src="https://kit.fontawesome.com/134b89db0f.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        {% endblock %}
 
-    <title>AQUA_S</title>
-  </head>
-  <body>
-    <header class="container-fluid fixed-top">
+        <title>AQUA_S</title>
+    </head>
+    <body>
+        <header class="container-fluid fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3a86ff;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{ url 'home' }">AQUA S</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Delivery</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit" style="background-color: #79b791;">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
 
-    </header>
+        </header>
 
-    {% if messages %}
-        <div class="message-container">
+        {% if messages %}
+            <div class="message-container">
 
-        </div>
-    {% endif %}
+            </div>
+        {% endif %}
 
-    {% block page_header %}
+        {% block page_header %}
 
-    {% endblock %}
+        {% endblock %}
 
-    {% block content %}
+        {% block content %}
 
-    {% endblock %}
+        {% endblock %}
 
-    {% block postloadjs %}
+        {% block postloadjs %}
 
-    {% endblock %}
+        {% endblock %}
 
 
-    
-  </body>
+      
+    </body>
 </html>
