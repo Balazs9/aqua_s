@@ -46,11 +46,28 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Delivery</a>
                             </li>
+                            
                         </ul>
-                        <form class="d-flex">
+                        <form method="GET" action="#" class="d-flex align-items-center">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit" style="background-color: #79b791;">Search</button>
                         </form>
+                        <div class="list-inline-item">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
+                                <div class="text-center col-md-2">
+                                    <div class="d-flex d-none d-md-flex flex-row align-items-end"><strong class="shop-bag"><i class="fas fa-shopping-cart"></i></strong>
+                                        <div class="d-flex flex-column ms-2"><span class="fw-bold"></span></div>
+                                    </div>
+                                    <p class="my-0">
+                                        {% if grand_total %}
+                                            ${{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                            $0.00
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
