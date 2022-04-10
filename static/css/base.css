@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('media/sunset.jpg') no-repeat center center fixed;
+    background-size: size;
+    height: calc(100vh - 164px);
+    color: #abd1b5;
+    
+}

@@ -7,10 +7,6 @@ from django.db.models import Q
 def all_products(request):
     """ A view to show all products """
 
-    if request.GET:
-        if 'q' in request.GET:
-            query = request.GET['q']
-
     products = Product.objects.all()
 
     context = {
@@ -18,6 +14,36 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
+
+
+def mineral_water(request):
+    """ A view to show only the mineral waters """
+
+    products = Product.objects.filter(category__name=mineral_water)
+
+    return render(request, 'products/products.html', {
+        'products': products,
+    })
+
+
+def sport_drink(request):
+    """ A view to show only the sport drinks """
+
+    products = Product.objects.filter(category__name=sport_drink)
+
+    return render(request, 'products/products.html', {
+        'products': products,
+    })
+
+
+def water_dispenser(request):
+    """ A view to show only the water dispenser machines """
+
+    products = Product.objects.filter(category__name=water_dispenser)
+
+    return render(request, 'products/products.html', {
+        'products': products,
+    })
 
 
 def product_detail(request, product_id):
