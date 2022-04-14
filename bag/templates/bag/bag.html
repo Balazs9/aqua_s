@@ -21,5 +21,96 @@
                 <h2 class="logo-font mb-4">Shopping bag</h2>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                    <div class="d-blcok d-md-none">
+                        <div class="row">
+                            <div class="col">
+
+                            </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-muted mb-5">Shopping Basket contains</p>
+                            </div>
+                        </div>
+                        {% for item in bag_items %}
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-2">
+
+                                </div>
+                                <div class="col-12 col-sm-6 mb-2">
+
+                                </div>
+                                <div class="col-12 col-sm-6 mb-2">
+                                    <p class="my-0">Price: ${{ item.product.price }}</p>
+                                    <p><strong>Total: </strong>${{ item.product.price }}</p>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-2">
+
+                                </div>
+                            </div>
+                            <div class="row"><div class="col"><hr></div></div>
+                        {% endfor %}
+                        <div class="btt-button rounded-0 border border-blue">
+                            <a class="btt-link d-flex h-100">
+                                
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table-responsive rounded d-none d-md-block">
+                        <table class="table table-sm table-borderless">
+                            <thead class="text-black">
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+
+                            {% for item in bag_items %}
+                                <tr>
+                                    <td class="p-3 w-25">
+
+                                    </td>
+                                    <td class="p-3 w-25">
+                                        
+                                    </td>
+                                    <td class="p-3 w-25">
+                                        
+                                    </td>
+                                    <td class="p-3 w-25">
+                                        
+                                    </td>
+                                    <td class="p-3 w-25">
+                                        
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+                            <tr>
+                                <td colspan="5" class="pt-5 text-right">
+
+                                </td>
+                                <td colspan="5" class="text-right">
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                {% else %}
+                    <p class="lead mb-5">Your basket is empty</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-blue rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fa-solid fa-left"></i>
+                        </span>
+                        <span class="text-uppercase">Continue shopping</span>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock %}
