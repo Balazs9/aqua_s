@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -25,7 +26,7 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                    <div class="d-blcok d-md-none">
+                    <div class="d-blcok">
                         <div class="row">
                             <div class="col">
 
@@ -33,19 +34,20 @@
                         <div class="row">
                             <div class="col">
                                 <p class="text-muted mb-5">Shopping Basket contains</p>
+                                <a href="{% url 'products' %}" class="btn btn-outline-blue rounded-0 btn-lg"></a>
                             </div>
                         </div>
                         {% for item in bag_items %}
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
-
+                                    
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
 
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
                                     <p class="my-0">Price: ${{ item.product.price }}</p>
-                                    <p><strong>Total: </strong>${{ item.product.price }}</p>
+                                    <p><strong>Total: </strong>${{ item.product.price | calc_subtotal:item.quantiy }}</p>
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
 
@@ -86,7 +88,7 @@
                                         
                                     </td>
                                     <td class="p-3 w-25">
-                                        
+                                        <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -113,4 +115,32 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item
+    $('.remove-item').click(function(e) {
+        var csrfToken ="{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url =`/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+
+    
+</script>
 {% endblock %}

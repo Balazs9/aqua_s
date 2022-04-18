@@ -6,8 +6,18 @@ body {
     background: url('/media/sunset.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #abd1b5;
+    color: #520c00;
     
+}
+#front-text {
+    background-color: rgba(60, 60, 60, 0.6);
+    color: #fff;
+    border-radius: 0.8px;
+}
+.card {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
 }
 
 .overlay {
@@ -18,4 +28,40 @@ body {
     position: fixed;
     background: #fff;
     z-index: -1;
+}
+
+/* -------------------- bootstrap toasts --- */
+
+.message-container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* -------------------- from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ --- */
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid blue;
+    position: absolute;
+    top: -10px;
+    right: 40px;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
