@@ -30,6 +30,12 @@ body {
     z-index: -1;
 }
 
+#delivery-banner {
+    background-color: rgba(205, 125, 125, 0.6);
+    width: 40%;
+    float:right;
+}
+
 /* -------------------- bootstrap toasts --- */
 
 .message-container {
