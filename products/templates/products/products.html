@@ -52,3 +52,12 @@
         </div>
     </div>
 {% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+        <script type="text/javascript">
+            $('.btn-link').click(function(e) {
+                window.scrollTo(0,0)
+            })
+        </script>
+{% endblock %}

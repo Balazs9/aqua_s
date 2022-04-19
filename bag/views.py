@@ -45,7 +45,6 @@ def adjust_bag(request, item_id):
         bag[item_id] = quantity
         messages.success(request, f'Removed {product.name} quantity in your basket!')
 
-
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
@@ -61,7 +60,6 @@ def remove_from_bag(request, item_id):
     else:
         bag[item_id] = quantity
         messages.success(request, f'Deleted {product.name} from your basket!')
-
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))

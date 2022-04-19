@@ -40,7 +40,7 @@
                         {% for item in bag_items %}
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
-                                    
+                                    {% url 'view_bag' %}
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
 
@@ -82,7 +82,7 @@
                                         
                                     </td>
                                     <td class="p-3 w-25">
-                                        
+                                        {{ item.product.price }}
                                     </td>
                                     <td class="p-3 w-25">
                                         
@@ -119,6 +119,11 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0)
+    })
+</script>
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
@@ -132,7 +137,7 @@
     $('.remove-item').click(function(e) {
         var csrfToken ="{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url =`/bag/remove/${itemId}`;
+        var url =`/bag/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
