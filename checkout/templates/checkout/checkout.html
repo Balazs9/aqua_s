@@ -6,3 +6,37 @@
     <link rel="stylesheet" href="{% static 'checkout/checkout.css' %}"
 {% endblock %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlya"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="logo-font mb-4">Checkout</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-last mb-5">
+                <p class="text-mutetd">Order Summary ({{ product_count }})</p>
+                <div class="row">
+                    <div class="col-7 offset-2">
+                        <p class="mb-1 mt-0 small text-muted">Item</p>
+                    </div>
+                    <div class="col-3 text-right">
+                        <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
