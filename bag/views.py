@@ -38,11 +38,11 @@ def adjust_bag(request, item_id):
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
 
-    if item_id in list(bag.keys()):
-        bag[item_id] += quantity
+    if quantity > 0:
+        bag[item_id] = quantity
         messages.success(request, f'Updated {product.name} quantity in your basket!')
     else:
-        bag[item_id] = quantity
+        bag.pop(item_id)
         messages.success(request, f'Removed {product.name} quantity in your basket!')
 
     request.session['bag'] = bag
@@ -55,10 +55,7 @@ def remove_from_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     bag = request.session.get('bag', {})
 
-    if item_id in list(bag.keys()):
-        bag[item_id] += quantity
-    else:
-        bag[item_id] = quantity
+    if bag.pop(item_id):
         messages.success(request, f'Deleted {product.name} from your basket!')
 
     request.session['bag'] = bag
