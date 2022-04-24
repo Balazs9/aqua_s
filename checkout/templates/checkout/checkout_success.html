@@ -169,6 +169,14 @@
                         <div class="col-12 col-md-8 text-md-right">
                             <p class="mb-0">{{ order.grand_total }}</p>
                         </div>
+                        {% if from_profile %}
+                            <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+                                <span class="icon mr-2">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </span>
+                                <span class="text-uppercase">Back to my account</span>
+                            </a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
