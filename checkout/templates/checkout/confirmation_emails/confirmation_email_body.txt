@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}
+
+This is a confirmation email regarding your order from AQUA_S.
+
+We are happy you decided to choose or mineral water or water dispenser to have a quality water for your every day. 
+
+Order number: {{ order.order_number }}
+Order date: {{ order.date }}
+
+Order total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand total: ${{ order.grand_total }}
+
+Your order will be delivered to your {{ order.address_1 }} in {{ order.city }}, {{ order.country }}.
+
+If you have any questions, please contact us.
+
+Thank you for your order!
+
+AQUA_S
