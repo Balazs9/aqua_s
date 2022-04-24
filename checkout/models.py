@@ -17,7 +17,7 @@ class Order(models.Model):
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
-    country = models.CharField(max_length=40, null=False, blank=False)
+    country = CountryField(blank_label='Country *', null=False, blank=False)
     post_code = models.CharField(max_length=20, null=True, blank=True)
     city = models.CharField(max_length=30, null=False, blank=False)
     address_1 = models.CharField(max_length=30, null=False, blank=False)
@@ -70,13 +70,8 @@ class OrderLineItem(models.Model):
         """
         Override the save method to set the order number
         """ 
-
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
 
     def __str__(self):
         return f'{self.product.full_name} on order {self.order.order_number}'
-
-
-
-
