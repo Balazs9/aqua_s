@@ -66,6 +66,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'products' %}?category=water_dispenser">Water Dispenser</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'profile' %}?category=water_dispenser">My account</a>
+                                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                    {% if request.user.is_authenticated %}
+                                        {% if request.user.is_superuser %}
+                                            <a href="#" class="dropdown-item">Product managemant</a>
+                                        {% endif %}
+                                        <a href="{% url 'profile' %}" class="dropdown-itetm">My account</a>
+                                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                    {% else %}
+                                        <a href="{% url 'account_signup' %} class="dropdown-item">Register</a>
+                                        <a href="{% url 'account_login' %} class="dropdown-item">Login</a>
+                                    {% endif %}
+                                </div>
+                            </li>
                             
                         </ul>
                         <form method="GET" action="{% url 'products' %}" class="d-flex align-items-center">
