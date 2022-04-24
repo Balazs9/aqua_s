@@ -66,14 +66,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'products' %}?category=water_dispenser">Water Dispenser</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'profile' %}?category=water_dispenser">My account</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="user-options" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My account</a>
                                 <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                     {% if request.user.is_authenticated %}
                                         {% if request.user.is_superuser %}
                                             <a href="#" class="dropdown-item">Product managemant</a>
                                         {% endif %}
-                                        <a href="{% url 'profile' %}" class="dropdown-itetm">My account</a>
+                                        <a href="{% url 'profile' %}" class="dropdown-item">My account</a>
                                         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                     {% else %}
                                         <a href="{% url 'account_signup' %} class="dropdown-item">Register</a>
