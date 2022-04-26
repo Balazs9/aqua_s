@@ -30,6 +30,18 @@ body {
     z-index: -1;
 }
 
+.fa-solid {
+    background: #000;
+}
+
+.btn {
+    background: #007bff;
+    border-radius: 0.5rem;
+}
+.btn:hover {
+    background: rgba(106, 115, 139, 0.6);
+}
+
 #delivery-banner {
     background-color: rgba(205, 125, 125, 0.6);
     width: 40%;

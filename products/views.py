@@ -12,7 +12,7 @@ def all_products(request):
     """ A view to show all products """
 
     products = Product.objects.all()
-
+    print("here")
     context = {
         'products': products,
     }
@@ -26,7 +26,7 @@ def mineral_water(request):
     product = Product.objects.filter(category__name='mineral_water')
 
     return render(request, 'products/products.html', {
-        'product': product,
+        'products': product,
     })
 
 
@@ -34,9 +34,9 @@ def sport_drink(request):
     """ A view to show only the sport drinks """
 
     product = Product.objects.filter(category__name='sport_drink')
-
+    print(product)
     return render(request, 'products/products.html', {
-        'product': product,
+        'products': product,
     })
 
 
@@ -46,7 +46,7 @@ def water_dispenser(request):
     product = Product.objects.filter(category__name='water_dispenser')
 
     return render(request, 'products/products.html', {
-        'product': product,
+        'products': product,
     })
 
 
