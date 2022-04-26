@@ -84,13 +84,13 @@ def add_product(request):
 
     return render(request, template, context)
 
-def edit_product(request):
+def edit_product(request, product_id):
     """
     Edit product in the store
     """
-    product = get_object_or_404(Product, pk=product_id, instance=product)
+    product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
+        form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product.')

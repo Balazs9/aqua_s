@@ -1,8 +1,8 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="container header-containr">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -16,19 +16,18 @@
             <div class="col-12 col-md-6">
                 <hr>
                 <h2 class="logo-font mb-4">Product management</h2>
-                <h4 class="text-muted">Add product</h4>
+                <h4 class="text-muted">Edit product</h4>
                 <hr>
             </div>
         </div>
-
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-right">
                         <a class="btn btn-outline-black" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-black" type="submit">Add product</button>
+                        <button class="btn btn-black" type="submit">Update product</button>
                     </div>
                 </form>
             </div>
