@@ -91,6 +91,11 @@ Aqua_S is in e-commerce shop selling mineral water, sport drinks and water dispe
 
 Balsamiq wireframe for windows and mobile screen:
 
+![wireframe](media/aqua_s_wireframe.png)
+
+- facebook mockup wireframe
+
+![mockup](media/aqua_s_facebook.png)
 
 ## Features:
 
