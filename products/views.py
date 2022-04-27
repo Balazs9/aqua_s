@@ -4,7 +4,6 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
 from .forms import ProductForm
 
 
@@ -71,7 +70,7 @@ def add_product(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully added product')
-            return redirect(reverse('add_product'))
+            return redirect(reverse('home'))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -83,6 +82,7 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
 
 def edit_product(request, product_id):
     """
