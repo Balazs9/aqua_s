@@ -11,7 +11,6 @@ def all_products(request):
     """ A view to show all products """
 
     products = Product.objects.all()
-    print("here")
     context = {
         'products': products,
     }
@@ -33,7 +32,6 @@ def sport_drink(request):
     """ A view to show only the sport drinks """
 
     product = Product.objects.filter(category__name='sport_drink')
-    print(product)
     return render(request, 'products/products.html', {
         'products': product,
     })
