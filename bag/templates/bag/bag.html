@@ -29,28 +29,28 @@
                     <div class="d-block">
                         <div class="row">
                             <div class="col">
-
+                                {% include "bag/bag-total.html" %}
                             </div>
                         <div class="row">
                             <div class="col">
+                                {% include "bag/checkout-buttons.html" %}
                                 <p class="text-muted mb-5">Shopping Basket contains</p>
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg"></a>
                             </div>
                         </div>
                         {% for item in bag_items %}
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
-                                    
+                                    {% include "bag/product-image.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
-
+                                    {% include "bag/product-info.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
                                     <p class="my-0">Price: ${{ item.product.price }}</p>
                                     <p><strong>Total: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
-
+                                    {% include "bag/quantity-form.html" %}
                                 </div>
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
@@ -76,16 +76,16 @@
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
-
+                                        {% include "bag/product-image.html" %}
                                     </td>
                                     <td class="p-3 w-25">
-                                        
+                                        {% include "bag/product-info.html" %}
                                     </td>
                                     <td class="p-3 w-25">
                                         {{ item.product.price }}
                                     </td>
                                     <td class="p-3 w-25">
-                                        
+                                        {% include "bag/quantity-form.html" %}
                                     </td>
                                     <td class="p-3 w-25">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -95,10 +95,10 @@
 
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-
+                                    {% include "bag/bag-total.html" %}
                                 </td>
                                 <td colspan="5" class="text-right">
-
+                                    {% include "bag/checkout-buttons.html" %}
                                 </td>
                             </tr>
                         </table>
