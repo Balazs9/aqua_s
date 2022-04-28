@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
-    'crispy_bootstrap5',
+
     'storages',
 
 ]
@@ -69,8 +69,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'aqua_s.urls'
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
