@@ -15,7 +15,7 @@ class Feedback(models.Model):
     likes = models.ManyToManyField(User, related_name='bloglike', blank=True)
 
     class Meta:
-        ordering: ['posted_date']
+        ordering = ['posted_date']
 
     def __str__(self):
         return self.title
@@ -33,7 +33,7 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
-        ordering['posted_date']
+        ordering = ['posted_date']
 
     def __str__(self):
         return f'{self.name} commented {self.chatbox}.'
