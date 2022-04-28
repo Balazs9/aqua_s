@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container fluid">
+        <div class="row">
+            <div class="card-body">
+                <div class="col-sm-6 text-black text-center">
+                    <h2 class="comment-title">{{ post.title }}</h2>
+                    <p class="comment-text">{{ post.user }} | {{ post.posted_date }}</p>
+                </div>
+                <div class="row">
+                    <p class="card-text">{{ post.content }}</p>
+                    <div class="row">
+                        <div class="col">
+                            {% if user.is_authenticated %}
+                            <form method="POST" action="{% url 'feedback_like' post.slug %}">
+                                {% csrf_token %}
+                                {% if like %}
+                                    <button type="submit" class="btn btn-black"><i class="fa-solid fa-thumbs-up"></i></button>
+                                {% else %}
+                                    <button type="submit" class="btn btn-black"><i class="fa-solid fa-thumbs-up"></i></button>
+                                {% endif %}
+                            </form>
+                            {% else %}
+                            <span><i class="fa-solid fa-thumbs-up"></i></span>
+                            {% endif %}
+                            <span>{{ post.item_like }}</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-6 text-black text-center">
+                    <h3>Comments:</h3>
+                    {% for comment in comments %}
+                    <div class="comments">
+                        <p>{{ comment.name }}
+                            <span>{{ comment.posted_date }}</span>
+                        </p>
+                        {{ comment.chatbox }}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-sm-6 text-black text-center">
+                    <h3>Leave your comment</h3>
+                    <p>{{ user.username }}</p>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <button type="submit-button" class="btn btn-black">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
