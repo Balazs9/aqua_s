@@ -11,7 +11,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid w-50 h-100">
+    <div class="container-fluid">
         <div class="my-auto p-5" id="blogpost">
             <h1 class="display-4 logo-font text-black text-center">
                 Feedback and experience
@@ -21,10 +21,10 @@
                 {% for post in feedback_list %}
                     <div class="col-sm-6">
                         <div class="card border-1">
-                            <h3 class="title">{{ post.title }}</h3>
-                            <p class="username">
+                            <h3 class="card-title">{{ post.title }}</h3>
+                            <p class="card-text">
                                 <i class="fa-solid fa-user"></i>
-                                {{ post.user }}
+                                {{ post.user }} | {{ post.posted_date }}
                             </p>
                             <a href="{% url 'feedback_detail' post.slug %}" class="btn btn-primary">Comment</a>
                             <p class="card-text text-muted"><i class="fa-solid fa-comments"></i>{{ post.posted_date }}</p>

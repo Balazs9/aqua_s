@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Feedback
+from .models import Feedback, Comment
 
 
 @admin.register(Feedback)
@@ -10,6 +10,7 @@ class FeedbackAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 
+@admin.register(Comment)
 class PostAdmin(admin.ModelAdmin):
     list_display = ('name', 'chatbox', 'post', 'posted_date', 'approved')
     list_filter = ('posted_date', 'approved')

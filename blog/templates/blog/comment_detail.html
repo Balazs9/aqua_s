@@ -53,6 +53,7 @@
                     <h3>Leave your comment</h3>
                     <p>{{ user.username }}</p>
                     <form method="POST">
+                        {{ comment_form | crispy }}
                         {% csrf_token %}
                         <button type="submit-button" class="btn btn-black">Submit</button>
                     </form>
