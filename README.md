@@ -105,6 +105,8 @@ Balsamiq wireframe for windows and mobile screen:
 
 ## Testing:
 
+- During deploying i had manny issues with heroku, deployed, but bad request 400 error, than it was fixed, i had database loading errors too. In the end managed to fix that too with helps from tutors, but than categories not visible anymore when i want to upload item. The git version was working perfectly before the issues.
+
 ## Deployment:
 
 ## Credits:
