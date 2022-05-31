@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.urls import reverse_lazy
 from django.views import generic, View
 from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
@@ -15,8 +16,9 @@ class FeedbackList(generic.ListView):
 
 class BlogCreate(CreateView):
     model = Feedback
-    fields = ['title', 'user']
+    fields = ['title', 'author', 'slug', 'status', 'content']
     template_name = 'blog/create_blog.html'
+    success_url = reverse_lazy('blog')
 
 
 class FeedbackDetail(View):

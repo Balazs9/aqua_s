@@ -8,7 +8,7 @@ STATUS = ((0, "Drafts"), (1, "Published"))
 class Feedback(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     posted_date = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
     status = models.IntegerField(choices=STATUS, default=0)

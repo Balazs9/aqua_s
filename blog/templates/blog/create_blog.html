@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -14,23 +15,7 @@
     {% if user.is_authenticated %}
         <form method="POST">
             {% csrf_token %}
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" placeholder="titlename">
-            </div>
-            <div class="form-group">
-                
-                <label for="productopt">Choose the item what interest you</label>
-                <select class="form-control" id="productopt">
-                    <option>Mineral water</option>
-                    <option>Sport drink</option>
-                    <option>Water dispenser</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="chat">Tell your experience</label>
-                <textarea class="form-control" id="chat" rows="4"></textarea>
-            </div>
+            {{ form.as_p }}
             <button type="submit-button" class="btn btn-black">Submit</button> 
         </form>
     {% endif %}
