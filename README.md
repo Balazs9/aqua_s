@@ -83,9 +83,43 @@ Aqua_S is in e-commerce shop selling mineral water, sport drinks and water dispe
 
 - add, edit or delete product
 
-- offer machines for sale or rent
+- offer machines for sale
+
+- create a post where customers can ask qusetions regarding the products
 
 ### Structure:
+
+Front page of Aqua_S
+
+![opening](media/opening.png)
+
+Products page, where all products visible
+
+![products](media/allproducts.png)
+
+Mineral water section
+
+![waters](media/waters.png)
+
+Water dispenser section
+
+![machines](media/machines.png)
+
+My profile section
+
+![profile](media/myprofile.png)
+
+Basket, with added products
+
+![basket](media/basket.png)
+
+Blog section, where site admin post topics and customers can ask 
+
+![blog](media/blog.png)
+
+Create a post, site admin create the blog
+
+![create](media/createblog.png)
 
 ### Skelton:
 
@@ -106,6 +140,10 @@ scroll down on the page
 added pictures of the website background and logo
 
 ![pictures](media/addedpictures.png)
+
+- mailchimp email subscribe option for visitors, customers
+
+![subscribe](media/subscribe.png)
 
 ## Features:
 
