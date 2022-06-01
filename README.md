@@ -93,9 +93,19 @@ Balsamiq wireframe for windows and mobile screen:
 
 ![wireframe](media/aqua_s_wireframe.png)
 
-- facebook mockup wireframe
+- facebook business page
 
-![mockup](media/aqua_s_facebook.png)
+Opening of facebook Aqua_S, with key message next to logo
+
+![opening](media/frontpage.png)
+
+scroll down on the page
+
+![infromations](media/facebookpagedetails.png)
+
+added pictures of the website background and logo
+
+![pictures](media/addedpictures.png)
 
 ## Features:
 
