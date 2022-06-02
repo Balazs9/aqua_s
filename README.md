@@ -79,6 +79,16 @@ Aqua_S is in e-commerce shop selling mineral water, sport drinks and water dispe
 
 - recieve confirmation about purchase
 
+- e-commerce webshop where a wide selection is available
+
+- account registration
+
+- easy simple online payment
+
+- blog post to contact with site admin
+
+ post as admin
+
 #### Admin requiremenets:
 
 - add, edit or delete product
@@ -86,6 +96,36 @@ Aqua_S is in e-commerce shop selling mineral water, sport drinks and water dispe
 - offer machines for sale
 
 - create a post where customers can ask qusetions regarding the products
+
+- easy navigation through the entire webshop
+
+- alert messages when adding, removing product from basket
+
+### SEO documentation:
+
+- ideas for short and long-tail keywords
+
+![seo](media/seo.png)
+
+- searching the keywords ideas on wordtracker 
+
+![waterdispenser](media/waterdispenser.png)
+
+![waterion](media/waterion.png)
+
+![waterionizer](media/waterionizer.png)
+
+![waterox](media/waterox.png)
+
+after the search on wordtracker selected the following keywords to add as extra keywords to the meta selection:
+
+- ion water
+
+- ion water dispenser
+
+- dissolved oxygen
+
+- oxygen in water
 
 ### Structure:
 
