@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://aqua-s.herokuapp.com/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/mineral/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/sport_drink/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/machine/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/blog/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/bag/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/18/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/19/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/20/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/25/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/26/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/27/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/28/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/29/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/30/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/31/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/32/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/blog/create/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/blog/comment/testing</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/?category=water_dispenser</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/18/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/18/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/19/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/19/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/20/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/20/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/products/?category=mineral_water</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/25/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/25/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/26/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/26/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/27/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/27/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/28/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/28/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/29/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/29/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/30/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/30/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/31/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/31/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/edit/32/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=/products/delete/32/</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F18%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F18%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F19%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F19%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F20%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F20%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F25%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F25%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F26%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F26%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F27%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F27%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F28%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F28%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F29%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F29%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F30%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F30%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F31%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F31%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fedit%2F32%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/signup/?next=%2Fproducts%2Fdelete%2F32%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F18%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F18%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F19%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F19%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F20%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F20%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F25%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F25%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F26%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F26%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F27%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F27%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F28%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F28%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F29%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F29%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F30%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F30%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F31%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F31%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fedit%2F32%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://aqua-s.herokuapp.com/accounts/login/?next=%2Fproducts%2Fdelete%2F32%2F</loc>
+  <lastmod>2022-06-02T20:32:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
