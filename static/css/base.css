@@ -85,7 +85,7 @@ input[name='q']::placeholder {
 }
 
 .arrow-secondary {
-    border-bottom-color: #6c757d !important;
+    border-bottom-color: #2c2e30 !important;
 }
 
 .arrow-success {

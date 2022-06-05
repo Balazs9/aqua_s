@@ -54,7 +54,6 @@ class StripeWebhook_Handler:
         Handle payment_intent.succeeded webhook from stripe
         """
         intent = event.data.object
-        print(intent)
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
@@ -107,7 +106,7 @@ class StripeWebhook_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: verified order already in database',
+                content=(f'Webhook received: {event["type"]} | SUCCESS: verified order already in database'),
                 status=200)
         else:
             order = None
@@ -151,7 +150,7 @@ class StripeWebhook_Handler:
         self._send_confirmation_email(order)
         return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: created order in webhook',
-                status=500)
+                status=200)
 
     def handle_payment_intent_payment_failed(self, event):
         """

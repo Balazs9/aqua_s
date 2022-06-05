@@ -1,6 +1,7 @@
 /*
     Core logic/paymnent flow comes from:
     https://stripe.com/docs/payments/accept-a-payment
+    https://stripe.com/docs/error-codes#parameter-unknown
     CSS from here:
     https://stripe.com/docs/stripe-js
 */
@@ -107,6 +108,7 @@ form.addEventListener('submit', function(ev) {
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
                     form.onsubmit();
+                    
                 }
             }
         });

@@ -38,7 +38,7 @@ select option {
 
 select:invalid,
 select option[value=""] {
-    color: #dee3df !important
+    color: #dee3df !important;
 }
 
 #loading-overlay {
@@ -62,5 +62,5 @@ select option[value=""] {
 
 .fieldset-label {
     position: relative;
-    right: .5 rem;
+    right: .5rem;
 }

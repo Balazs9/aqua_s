@@ -33,7 +33,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Order history</p>
-                {{ orders }}
+                {{ order }}
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-border-borderless">
                         <thead>
@@ -54,7 +54,7 @@
                                         </a>
                                     </td>
                                     <td>{{ order.date }}</td>
-                                    <td>${{ order.grand_total }}</td>
+                                    <td>€{{ order.grand_total }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>
@@ -67,5 +67,5 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countrfield.js' %}"></script>
+    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
