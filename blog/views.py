@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.urls import reverse_lazy
 from django.views import generic, View
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Feedback
 from .forms import CommentForm
@@ -18,6 +18,19 @@ class BlogCreate(CreateView):
     model = Feedback
     fields = ['title', 'author', 'slug', 'status', 'content']
     template_name = 'blog/create_blog.html'
+    success_url = reverse_lazy('blog')
+
+
+class BlogUpdate(UpdateView):
+    model = Feedback
+    fields = ['title', 'author', 'slug', 'status', 'content']
+    template_name = 'blog/update_blog.html'
+    success_url = reverse_lazy('blog')
+
+
+class BlogDelete(DeleteView):
+    model = Feedback
+    template_name = 'blog/delete_blog.html'
     success_url = reverse_lazy('blog')
 
 

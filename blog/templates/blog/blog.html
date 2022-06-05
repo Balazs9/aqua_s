@@ -23,11 +23,16 @@
                         <div class="card border-1">
                             <h3 class="card-title">{{ post.title }}</h3>
                             <p class="card-text">
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fas fa-user"></i>
                                 {{ post.user }} | {{ post.posted_date }}
                             </p>
                             <a href="{% url 'feedback_detail' post.slug %}" class="btn btn-primary">Comment</a>
-                            <p class="card-text text-muted"><i class="fa-solid fa-comments"></i>{{ post.posted_date }}</p>
+                            <p class="card-text text-muted"><i class="fas fa-comments"></i>{{ post.posted_date }}</p>
+                            {% csrf_token %}
+                            <small class="ml-3">
+                                <a href="{% url 'blog_edit' post.slug %}">Edit</a>
+                                <a href="{% url 'blog_delete' post.slug %}">Delete</a>
+                            </small>
                         </div>
                     </div>
                 {% endfor %}
