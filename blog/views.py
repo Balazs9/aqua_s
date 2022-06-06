@@ -33,6 +33,9 @@ class BlogDelete(LoginRequiredMixin, DeleteView):
     model = Feedback
     success_url = reverse_lazy('blog')
 
+    def get_queryset(self):
+        return Feedback.objects.all()
+
 
 class FeedbackDetail(View):
 

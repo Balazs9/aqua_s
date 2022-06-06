@@ -131,7 +131,11 @@ after the search on wordtracker selected the following keywords to add as extra 
 
 Front page of Aqua_S
 
-![opening](media/opening.png)
+![opening](media/front.png)
+
+Mailchimp email subscribe service for users to sign up 
+
+![mailsubscribe](media/frontwithsubscribe.png)
 
 Products page, where all products visible
 
@@ -147,7 +151,7 @@ Water dispenser section
 
 My profile section
 
-![profile](media/myprofile.png)
+![profile](media/account.png)
 
 Basket, with added products
 
@@ -155,11 +159,19 @@ Basket, with added products
 
 Blog section, where site admin post topics and customers can ask 
 
-![blog](media/blog.png)
+![blog](media/blogpost.png)
 
 Create a post, site admin create the blog
 
-![create](media/createblog.png)
+![create](media/blogcreate.png)
+
+Comment on a blog post
+
+![comment](media/commentblog.png)
+
+Facebook link from footer to open
+
+![facebook](media/openlink.png)
 
 ### Skelton:
 
@@ -181,9 +193,11 @@ added pictures of the website background and logo
 
 ![pictures](media/addedpictures.png)
 
-- mailchimp email subscribe option for visitors, customers
+- mailchimp email subscribe option for visitors, customers, which is visible on every page
 
 ![subscribe](media/subscribe.png)
+
+
 
 ## Features:
 
