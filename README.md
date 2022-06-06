@@ -142,6 +142,12 @@ after the search on wordtracker selected the following keywords to add as extra 
 
 ### Structure:
 
+DataBase Diagram
+
+db diagram to show the build up and connections between the apps on the website
+
+![dbdiagram](media/aqua_sdb.png)
+
 Admin Page models
 
 Front page of Admin site

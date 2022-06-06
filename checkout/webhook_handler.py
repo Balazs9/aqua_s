@@ -75,7 +75,7 @@ class StripeWebhook_Handler:
             if save_info:
                 profile.default_phone_number = shipping_details.phone
                 profile.default_country = shipping_details.address.country
-                profile.default_pst_code = shipping_details.address.postcode
+                profile.default_pst_code = shipping_details.address.postal_code
                 profile.default_city = shipping_details.address.city
                 profile.default_address_1 = shipping_details.address.line1
                 profile.default_address_2 = shipping_details.address.line2
@@ -117,7 +117,7 @@ class StripeWebhook_Handler:
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
                     country=shipping_details.address.country,
-                    post_code=shipping_details.address.postcode,
+                    post_code=shipping_details.address.postal_code,
                     city=shipping_details.address.city,
                     address_1=shipping_details.address.line1,
                     address_2=shipping_details.address.line2,

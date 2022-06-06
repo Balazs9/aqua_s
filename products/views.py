@@ -8,6 +8,11 @@ from django.db.models.functions import Lower
 from .forms import ProductForm
 
 
+def error_404(request, exception):
+    data = {}
+    return render(request, 'products/404.html', data)
+
+
 def all_products(request):
     """ A view to show all products """
 
