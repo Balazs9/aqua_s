@@ -13,7 +13,7 @@ class Category(models.Model):
         return self.name
 
     def get_product_type(self):
-        return self.get_product_type
+        return self.product_type
 
 
 class Product(models.Model):
