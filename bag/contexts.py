@@ -9,7 +9,6 @@ def bag_contents(request):
     bag_items = []
     total = 0
     product_quantity = 0
-    delivery = 0
     bag = request.session.get('bag', {})
 
     for item_id, item_data in bag.items():
@@ -22,6 +21,13 @@ def bag_contents(request):
             'product': product,
         })
 
+    if total < settings.FREE_DELIVERY_TRESHOLD:
+        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        free_delivery_delta = settings.FREE_DELIVERY_TRESHOLD - total
+    else:
+        delivery = 0
+        free_delivery_delta = 0
+
     grand_total = delivery + total
 
     context = {
@@ -29,6 +35,8 @@ def bag_contents(request):
         'total': total,
         'product_quantity': product_quantity,
         'delivery': delivery,
+        'free_delivery_delta': free_delivery_delta,
+        'free_delivery_treshold': settings.FREE_DELIVERY_TRESHOLD,
         'grand_total': grand_total,
     }
 

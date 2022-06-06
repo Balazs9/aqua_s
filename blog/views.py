@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views import generic, View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
@@ -14,23 +15,22 @@ class FeedbackList(generic.ListView):
     template_name = 'blog/blog.html'
 
 
-class BlogCreate(CreateView):
+class BlogCreate(LoginRequiredMixin, CreateView):
     model = Feedback
     fields = ['title', 'author', 'slug', 'status', 'content']
     template_name = 'blog/create_blog.html'
     success_url = reverse_lazy('blog')
 
 
-class BlogUpdate(UpdateView):
+class BlogUpdate(LoginRequiredMixin, UpdateView):
     model = Feedback
     fields = ['title', 'author', 'slug', 'status', 'content']
     template_name = 'blog/update_blog.html'
     success_url = reverse_lazy('blog')
 
 
-class BlogDelete(DeleteView):
+class BlogDelete(LoginRequiredMixin, DeleteView):
     model = Feedback
-    template_name = 'blog/delete_blog.html'
     success_url = reverse_lazy('blog')
 
 
