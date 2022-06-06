@@ -214,6 +214,18 @@ Facebook link from footer to open
 
 ![facebook](media/openlink.png)
 
+Checkout page with secure simple payment with stripe
+
+![checkout](media/checkout.png)
+
+Succesfull payment
+
+![payment](media/succesfullpayment.png)
+
+Order history, what user can find under my account -> my account
+
+![order](media/orderhistory.png)
+
 ### Skelton:
 
 Balsamiq wireframe for windows and mobile screen:
@@ -251,20 +263,155 @@ added pictures of the website background and logo
 
 ## Technologies:
 
+### Languages used:
+
+- HTML5
+
+- CSS
+
+- PYTHON
+
+- Javascript
+
+### Libraries, frames used
+
+- Django
+
+Python based framework to develop the website
+
+- Bootstrap5
+
+To design the html
+
+- Font awesome
+
+To provide the used icons
+
+- Google developer tools
+
+To inspect and identify bugs than fix them
+
+- AWS amazon webservice
+
+to store media files
+
+- SQLite
+
+Database used localy
+
+- PostgreSQL
+
+Database used on heroku
+
+- Balsamiq
+
+Used to make the wireframe
+
+- W3C html validator
+
+Used to validate the html files
+
+- W3C CSS validator
+
+Used to validate css
+
+- PEP8
+
+Used to validate python code
+
+- Crispy field
+
+To manage django form
+
+- Pixaby
+
+Where the hero image found
+
 ## Testing:
 
 - During deploying i had manny issues with heroku, deployed, but bad request 400 error, than it was fixed, i had database loading errors too. In the end managed to fix that too with helps from tutors, but than categories not visible anymore when i want to upload item. The git version was working perfectly before the issues.
+
+- checkout error
+
+after going through checkout app, checking models, views and templates, found some typing errors what caused this error message 'value too long'. The typing error was in models.py where () was missing from the end of the code. This error has been fixed and now customer can make a succesfull payment.
+
+![error](media/checkouterror.png)
+
+- in blog app delete view not working
+
+![errorblog](media/deleteviewnotworking.png)
 
 ## Deployment:
 
 The project was deployed on Github and Heroku
 
+- Git
+
+Version control
+
 - Github:
 
-Create a new repository with selecting code institue template
+For storing the code and deploying
+
+- Gitpod
+
+Developing and building the site
 
 - Heroku
 
+To deploy the project
+
+### Developing process:
+
+1. create a new repositorie on github, using the code institue template
+
+2. developing and editing the site on gitpod
+
+3. Heroku: creating a new app
+
+4. click create a new app
+
+5. choose region
+
+6. crate app
+
+7. when is ready open the new app
+
+8. go to resources -> Adds on -> add Heroku Postgres
+
+9. go to settings
+
+10. revael config war
+
+add the following through during the development
+
+- database url
+
+- secret key
+
+- email host pass
+
+- email host user
+
+- stripe public key
+
+- stripe secret key
+
+- aws keys
+
+11. create procfile
+
+12. settings add allowed_host
+
+13. commit and push
+
+14. push to heroku
+
+- heroku login -i
+
+heroku git:remote -a 'heroku app name'
+
+git push heroku main
 
 
 ## Credits:
