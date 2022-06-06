@@ -9,8 +9,7 @@ from .forms import ProductForm
 
 
 def error_404(request, exception):
-    data = {}
-    return render(request, 'products/404.html', data)
+    return render(request, 'products/404.html', {})
 
 
 def all_products(request):
