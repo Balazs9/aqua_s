@@ -146,7 +146,7 @@ DataBase Diagram
 
 db diagram to show the build up and connections between the apps on the website
 
-![dbdiagram](media/aqua_sdb.png)
+![dbdiagram](media/db_aqua_s.png)
 
 Admin Page models
 
@@ -340,6 +340,30 @@ after going through checkout app, checking models, views and templates, found so
 - in blog app delete view not working
 
 ![errorblog](media/deleteviewnotworking.png)
+
+- W3C html validator:
+
+products templates: all passed
+
+base template : passed
+
+profiles template: passed
+
+checkout templates: passed
+
+bag templates: passed
+
+- W3C CSS validator
+
+base.css: 1 typing error found in line 198, fixed
+
+checkout.css: passed
+
+- PEP8 python validator
+
+passed
+
+
 
 ## Deployment:
 

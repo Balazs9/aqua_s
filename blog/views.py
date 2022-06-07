@@ -9,6 +9,9 @@ from .forms import CommentForm
 
 
 class FeedbackList(generic.ListView):
+    """
+    listing the created blog posts
+    """
     model = Feedback
     queryset = Feedback.objects.filter(status=1).order_by('-posted_date')
     paginate_by = 6
@@ -16,6 +19,9 @@ class FeedbackList(generic.ListView):
 
 
 class BlogCreate(LoginRequiredMixin, CreateView):
+    """
+    to create a blog post, only registered logged in user can create
+    """
     model = Feedback
     fields = ['title', 'author', 'slug', 'status', 'content']
     template_name = 'blog/create_blog.html'
@@ -23,6 +29,9 @@ class BlogCreate(LoginRequiredMixin, CreateView):
 
 
 class BlogUpdate(LoginRequiredMixin, UpdateView):
+    """
+    edit the already created blog post, only logged in user can edit
+    """
     model = Feedback
     fields = ['title', 'author', 'slug', 'status', 'content']
     template_name = 'blog/update_blog.html'
@@ -30,15 +39,18 @@ class BlogUpdate(LoginRequiredMixin, UpdateView):
 
 
 class BlogDelete(LoginRequiredMixin, DeleteView):
+    """
+    delete blog post, only logged in user can delete
+    """
     model = Feedback
+    template_name = 'blog/delete_blog.html'
     success_url = reverse_lazy('blog')
 
-    def get_queryset(self):
-        return Feedback.objects.all()
-
-
+    
 class FeedbackDetail(View):
-
+    """
+    detailed post with listed comments on it
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Feedback.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -83,7 +95,9 @@ class FeedbackDetail(View):
 
 
 class FeedbackLike(View):
-
+    """
+    showing the likes on the post
+    """
     def post(self, request, slug):
         post = get_object_or_404(Feedback, slug=slug)
 
