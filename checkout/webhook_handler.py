@@ -29,7 +29,7 @@ class StripeWebhook_Handler:
             {'order': order}
         )
         body = render_to_string(
-            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL}
         )
 
