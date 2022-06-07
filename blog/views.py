@@ -37,15 +37,6 @@ class BlogUpdate(LoginRequiredMixin, UpdateView):
     template_name = 'blog/update_blog.html'
     success_url = reverse_lazy('blog')
 
-
-class BlogDelete(LoginRequiredMixin, DeleteView):
-    """
-    delete blog post, only logged in user can delete
-    """
-    model = Feedback
-    template_name = 'blog/delete_blog.html'
-    success_url = reverse_lazy('blog')
-
     
 class FeedbackDetail(View):
     """

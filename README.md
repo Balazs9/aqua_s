@@ -26,7 +26,29 @@ Customers can make their on blog where the site owner can comment on their quest
 
 ## User Stories
 
+- user stories issues:
+
+![userstories](media/user_stories_issues.png)
+
 ## UX
+
+The build up of the webshop:
+
+1. front page: opening, with a message about what is the shop about and a shop online button.
+
+- mailchimp email subscribe service visible on all pages footer with the facebook link
+
+2. navbar: containing all the pages which are producst, mineral water, sport drinks and water dispenser, blog and my account plus the shopping basket. From navbar customer/visitor can easily navigate through all pages back and forward.
+
+3. Products page: is showing all the products on one page
+
+4. mineral water, sport drinks and water dispenser pages showing only the relevant item what is supposed to be under these names.
+
+5. blog: where site owner creating blog posts about products, services and customer ask questions, also they can create posts too and edit that.
+
+6. my account: is about profile registrations, when logged in order history can be visited.
+
+7. shopping basket: click on that goes to the bag app where customer can securely checkout make a simple payment.
 
 ### Design
 
@@ -257,7 +279,10 @@ added pictures of the website background and logo
 - mailchimp email subscribe service
 
 [mailchimp](https://mailchimp.com/?_ga=2.11213693.893351747.1654114279-1355780773.1654114279)
- 
+
+- features to be implement:
+
+site owner to be able to delete the created post
 
 ## Issues:
 
@@ -439,3 +464,7 @@ git push heroku main
 
 
 ## Credits:
+
+- Pixaby for the hero image
+
+- my mentor 
