@@ -24,6 +24,10 @@
 Aqua_S is in e-commerce shop selling mineral water, sport drinks and water dispenser machines to private users or companies. The e commerce website made for a family business, where the goal is to reach more customers through the online shop. The blog page on the site makes it easier to customers to ask questions about the products or the service.
 Customers can make their on blog where the site owner can comment on their question.
 
+live project
+
+[live](https://aqua-s.herokuapp.com/)
+
 ## User Stories
 
 - user stories issues:
